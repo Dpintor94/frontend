@@ -1,0 +1,418 @@
+﻿/*=======================================
+    GENERAL STYLES
+==================================================*/
+
+body {
+          font-family:'Open Sans', sans-serif;
+    font-size:14px;
+    background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height:50px;
+    font-weight:900;
+    font-size:30px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#eefb03;
+}
+    h1::after {
+        display: block;
+content: "";
+height: 2px;
+width: 150px;
+background: #eefb03;
+margin: 5px auto 40px;
+    }
+
+
+.text-center {
+    text-align:center;
+}
+
+h2 {
+    line-height:50px;
+    color:#ffffff;
+}
+h3 {
+    line-height:30px;
+    padding-bottom:20px;
+    color: #eefb03;
+}
+h4 {
+   padding-top: 25px;
+line-height: 40px;
+padding-bottom: 0px;
+font-size: 22px;
+color: #eefb03;
+font-weight: 900;
+
+}
+.adjst {
+     padding-top: 0px;
+}
+.c-main {
+    color:#eefb03;
+}
+p {
+    font-weight:300;
+    line-height:30px;
+    padding-bottom:15px;
+    color: #fff;
+}
+
+.space-free {
+    height:100px;
+}
+
+.g-pad-bottom {
+    padding-bottom:40px;
+}
+
+section {
+    padding-top:50px;
+    margin-top:50px;
+}
+
+
+.form-control {
+        background-color: #fff;
+}
+.c-pr-i {
+    color:#eefb03;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.panel-body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    padding: 15px; /* Espaciado interno para mejor legibilidad */
+}
+
+
+/*=======================================
+    HOME SECTION STYLES
+==================================================*/
+
+.go-marg {
+    margin-top:40px;
+    color:#eefb03;
+}
+
+#home-sec { 
+  
+    
+background-color:#000;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 100%;
+display: block;
+height: auto;
+ padding-top:190px;
+    padding-bottom:200px;
+    color:#fff;
+}
+
+.head-main {
+    font-size:60px ;
+    font-weight:900;
+    border:5px double #fff;
+    padding:5px;
+    text-transform:uppercase;
+    
+}
+.head-sub-main {
+    font-size:23px ;
+    font-weight:500;
+    padding:50px 20px 10px 20px;
+     text-transform:uppercase;
+    
+}
+.head-last {
+    font-size:18px ;
+    font-weight:900;
+    padding:5px 20px 20px 20px;
+    border:1px dotted #fff;
+    padding:5px;
+}
+
+
+/* ===========================================================
+   NAVBAR CHANGES   
+   ============================================================*/
+.navbar {
+	font-size: 18px;
+}
+
+.navbar-inverse {
+background: #000000 !important;
+min-height: 60px;
+padding-top: 10px;
+padding: 15px 25px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+	font-weight: bolder;
+	font-size: 25px;
+    font-weight:900;
+	letter-spacing: 2px;
+}
+.navbar-inverse :hover .navbar-brand:hover {
+	color: #ffffff;	
+}
+
+.navbar-header {
+    display: flexbox; /* Activa flexbox */
+    align-items: center; /* Alinea elementos verticalmente */
+}
+.navbar-header .navbar-brand {
+    padding: 0; /* Elimina el espacio adicional */
+    margin-right: 20px;
+    display: inline-block; /* Muestra el logo como un elemento en línea */
+}
+.navbar-header .navbar-brand img {
+    height: 80px; /* Ajustar tamaño del logo */
+    width: auto; /* Mantener proporciones */
+    display: block; /* Mostrar en línea */
+    
+}
+
+/* Asegúrate de que los elementos ocupen el ancho total */
+.navbar-nav {
+    display: flex; /* Cambia a diseño flexbox */
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.navbar-inverse .navbar-nav > li {
+    margin: 0 10px; /* Espaciado entre cada elemento */
+    flex: 1; /* Distribuir espacio de manera uniforme */
+    
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #eefb03;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    padding: 10px 15px; /* Espaciado interno */
+    display: block;
+}
+
+.navbar-inverse {
+border-color: #000000 !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #000000 !important;
+}
+
+.navbar-collapse .nav li.bottom .btn {
+    background-color: #eefb03; /* Fondo amarillo */
+    color: #000000; /* Texto negro */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negritas */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border: 2px solid #eefb03; /* Borde del mismo color que el fondo */
+    cursor: pointer; /* Indicador de clic */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animaciones suaves */
+}
+
+/* Efecto hover */
+.navbar-collapse .nav li.bottom .btn:hover {
+    background-color: #ffeb3b; /* Fondo amarillo más claro */
+    color: #222222; /* Texto gris oscuro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+/*=======================================
+    PRICE SECTION STYLES
+==================================================*/
+#price-sec {
+    background-color:#000000;
+    color: #fff;
+}
+.plan {
+    background: #000000;
+    
+    padding: 0 0 15px 0;
+    margin: 30px 0px;
+    list-style: none;
+    text-align: center;
+  
+}
+
+
+
+.plan li {
+   padding: 15px 0px;
+color: #f3f3f3;
+font-size: 16px;
+border-bottom:1px dotted #e1e1e1;
+}
+
+
+.plan li.plan-head {
+   padding: 40px 0px;
+line-height: 35px;
+font-size: 32px;
+font-weight: 600;
+border: none;
+color: #fff;
+   }
+
+.plan li.main-price {
+padding: 25px 0px;
+color: #eefb03;
+border: none;
+font-weight: 900;
+font-size: 60px;
+}
+
+small {
+    font-size: 15px;
+    color:#000;
+}
+
+/*==========================================
+    PORTFOLIO STYLES
+    =====================================================*/
+
+
+.portfolio-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-items {
+  margin-right: -20px;
+}
+.portfolio-items > li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-items.col-3 > li {
+  width: 33%;
+}
+
+.portfolio-item .item-main {
+  margin: 0 10px 10px 0;
+  text-align: center;
+  background: #000000;
+  padding: 10px;
+  border:1px solid #000000;
+  
+}
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-item .portfolio-image {
+  position: relative;
+}
+.portfolio-item h5 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: #eefb03;
+color: #000000;
+}
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.portfolio-item .overlay .preview {
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  margin-top: -20px;
+}
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/*=======================================
+    Contact STYLES
+==================================================*/
+#contact-sec {
+     background-color:#000000;
+}
+.cnt {
+width: 100%;
+min-height: 350px;
+border: 1px solid #e1e1e1;
+}
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+
+#footer {
+    background-color:#eefb03;
+    color:#000000;
+    padding:20px 50px 20px 50px;
+    text-align:right;
+}
+
+
+/*=======================================
+    MEDIA QUERIES
+    
+    ==================================================*/
+
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main { 
+        font-size:28px ;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size:24px ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
