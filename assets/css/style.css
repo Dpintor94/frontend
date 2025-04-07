@@ -21,12 +21,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    padding-top: 35px;
     line-height:50px;
     font-weight:900;
     font-size:30px;
     text-transform:uppercase;
     text-align:center;
     color:#eefb03;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
     h1::after {
     display: block;
@@ -45,11 +51,21 @@ h2 {
     line-height:50px;
     color:#ffffff;
     text-align:center;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
 h3 {
     line-height:30px;
     padding-bottom:20px;
     color: #eefb03;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
 h4 {
     padding-top: 25px;
@@ -58,6 +74,11 @@ h4 {
     font-size: 22px;
     color: #eefb03;
     font-weight: 900;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
 .adjst {
      padding-top: 0px;
@@ -66,10 +87,16 @@ h4 {
     color:#eefb03;
 }
 p {
+    padding: 15px;
     font-weight:300;
     line-height:30px;
     padding-bottom:15px;
     color: #fff;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
 
 .space-free {
@@ -88,11 +115,7 @@ section {
 .form-control {
         background-color: #fff;
 }
-.c-pr-i {
-    color:#eefb03;
-    padding-left:10px;
-    padding-right:10px;
-}
+
 
 .panel-body {
     background-color: rgba(0, 0, 0, 0.5);
@@ -281,6 +304,11 @@ section {
 #price-sec {
         color: #fff;
 }
+.c-pr-i {
+    color:#eefb03;
+    padding-left:10px;
+    padding-right:10px;
+}
 .plan {
        
     padding: 0 0 15px 0;
@@ -294,6 +322,11 @@ section {
     color: #f3f3f3;
     font-size: 16px;
     border-bottom:1px dotted #e1e1e1;
+    text-shadow: 
+        -2px -2px 0 #000, /* Sombra superior izquierda */
+        2px -2px 0 #000,  /* Sombra superior derecha */
+        -2px 2px 0 #000,  /* Sombra inferior izquierda */
+        2px 2px 0 #000;   /* Sombra inferior derecha */
 }
 
 
@@ -395,29 +428,78 @@ small {
 /* Removed empty ruleset */
 .cnt {
     width: 100%;
+    padding: 15px;
     min-height: 350px;
-    border: 1px solid #e1e1e1;
+   
 }
 
+.social-icons {
+    align-items: center;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    
+    display: inline-block;
+    width: 45px;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+.btn-submit {
+    background-color: #eefb03; /* Fondo amarillo */
+    color: #000000; /* Texto negro */
+    font-size: 13px; /* Tamaño de fuente */
+    padding: 10px 30px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negritas */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border: 1px solid #eefb03; /* Borde del mismo color que el fondo */
+    cursor: pointer; /* Indicador de clic */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animaciones suaves */
+    margin-top: 10px; /* Espaciado superior */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    text-align: center;
+    width: 130px;
+   
+}
+
+.btn-submit:hover{
+    background-color: #ffeb3b; /* Fondo amarillo más claro */
+    color: #222222; /* Texto gris oscuro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+
+}
 /*=======================================
     LOGIN STYLES
 ==================================================*/
 
 
-#content {
-    flex: 1; /* Hace que este contenedor ocupe el espacio disponible */
+#content {    
+    flex: auto; /* Hace que este contenedor ocupe el espacio disponible */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    align-items: start; /* Centra verticalmente */
     padding: 20px; /* Espaciado interno para evitar bordes pegados */
 }
 
 .panel-body {
+    
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     border-radius: 30px; /* Bordes redondeados */
-    padding: 35px; /* Espaciado interno */
+    padding: 25px; /* Espaciado interno */
     width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 355px; /* Limita el ancho máximo */
+    max-width: 375px; /* Limita el ancho máximo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
 }
 
@@ -430,19 +512,21 @@ small {
     flex: auto; /* Hace que este contenedor ocupe el espacio disponible */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
+    align-items: start; /* Centra verticalmente */
     padding: 20px; /* Espaciado interno para evitar bordes pegados */
-    margin-top: 110px; /* Agrega un margen superior para separar del borde superior */
+
 }
 
 
 .panel-body1 {
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     border-radius: 30px; /* Bordes redondeados */
-    padding: 35px; /* Espaciado interno */
+    padding: 25px; /* Espaciado interno */
     width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 450px; /* Limita el ancho máximo */
+    max-width: 375px; /* Limita el ancho máximo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    height: 90%;
+        
 }
 
 
@@ -452,14 +536,13 @@ small {
 
 
 #footer {
-    display: flexbox;
-    flex: 1;
+    font-family:'Open Sans', sans-serif;    
     background-color:#eefb03;
     color:#000000;
-    padding:20px 50px;
+    padding:10px 15px;
     text-align:right;    
     width: 100%; /* Asegura que ocupe todo el ancho */
-    position: static;
+    
     }
 
 /*=======================================
