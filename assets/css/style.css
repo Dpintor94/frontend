@@ -398,21 +398,6 @@ small {
     min-height: 350px;
     border: 1px solid #e1e1e1;
 }
-/*=======================================
-    FOOTER STYLES
-==================================================*/
-
-
-#footer {
-    flex: 1;
-    background-color:#eefb03;
-    color:#000000;
-    padding:20px 50px;
-    text-align:right;    
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    position: static;
-    }
-
 
 /*=======================================
     LOGIN STYLES
@@ -430,11 +415,53 @@ small {
 .panel-body {
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     border-radius: 30px; /* Bordes redondeados */
-    padding: 50px; /* Espaciado interno */
+    padding: 35px; /* Espaciado interno */
     width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 350px; /* Limita el ancho máximo */
+    max-width: 355px; /* Limita el ancho máximo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
 }
+
+/*=======================================
+    REGISTER STYLES
+==================================================*/
+
+
+#content1 {
+    flex: auto; /* Hace que este contenedor ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Espaciado interno para evitar bordes pegados */
+    margin-top: 110px; /* Agrega un margen superior para separar del borde superior */
+}
+
+
+.panel-body1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 35px; /* Espaciado interno */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 450px; /* Limita el ancho máximo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    height: 90%;
+}
+
+
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+
+#footer {
+    display: flexbox;
+    flex: 1;
+    background-color:#eefb03;
+    color:#000000;
+    padding:20px 50px;
+    text-align:right;    
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: static;
+    }
+
 /*=======================================
     MEDIA QUERIES
     
