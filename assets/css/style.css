@@ -248,7 +248,8 @@ section {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #eefb03;
+    /*color: #eefb03;*/
+    color: #ffffff; /* Color del texto */
     text-transform: uppercase; /* Texto en mayúsculas */
     padding: 5px 10px; /* Espaciado interno */
     display: block;
@@ -561,7 +562,16 @@ small {
     }
 }
 
+/* clases y servicios */ 
+.servicios {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre cada servicio */
+}
 
+.serviciosBody{
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
 
 
 

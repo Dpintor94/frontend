@@ -15,6 +15,12 @@
         <![endif]-->
     <title>EnerGym</title>
     <!--REQUIRED STYLE SHEETS-->
+    <!-- jQuery (debe ir primero) -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLE CSS -->
@@ -51,7 +57,7 @@
             <div class="navbar-collapse collapse">       
             <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home-sec">INICIO</a></li>
-                    <li><a href="#price-sec">PLANES Y MENBRESIAS</a></li>
+                    <li><a href="#price-sec">PLANES Y MEMBRESIAS</a></li>
                     <li><a href="#services-sec">CLASES Y SERVICIOS</a></li>
                     <li><a href="#port-sec">ENTRENADORES</a></li>
                     <li><a href="#testimons-sec">TESTIMONIOS</a></li>
@@ -91,22 +97,19 @@
     
     <section id="price-sec">
         <div class="container">
-            <div class="row g-pad-bottom">
-                <h1 class="g-pad-bottom">PLANES Y MENBRESIAS </h1>
-                    <h2>Selecciona el plan que mas se acomode a tus necesidades </h2>
-                  
+            <div class="row g-pad-bottom" >
+                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs "></i> PLANES Y MEMBRESIAS </h1>                    
+                    <p>En nuestro gimnasio, sabemos que cada persona tiene metas diferentes. Por eso, ofrecemos planes flexibles que se adaptan a tu estilo de vida, tu nivel de entrenamiento y tus objetivos personales. Ya sea que estés empezando o busques llevar tu rendimiento al siguiente nivel, tenemos una opción para ti.</p>                  
                 <div class="col-md-12 text-center ">
                     <div class="col-md-4 col-sm-4">
-                        <ul class="plan">
-                             
-                            <li class="plan-head">PLAN <i class="fa fa-dot-circle-o  c-pr-i"></i> BASICO</li>
-                           
-                            <li><strong>1</strong> Cuenta</li>
-                            <li><strong>Acceso</strong> Datos</li>
-                            <li><strong>Crear</strong> Contenido</li>
-                             <li class="main-price">$15 <small> * only</small></li>
+                        <ul class="plan">                            
+                            <li class="plan-head">PLAN <i class="fa fa-dot-circle-o  c-pr-i"></i> BASICO</li>                    
+                            <li>Acceso a todas las áreas del gimnasio</li>
+                            <li>Uso libre de máquinas y pesas</li>
+                            <li>Ideal para entrenamientos independientes</li>
+                            <li class="main-price">$65.000</li>
                             <li class="bottom">
-                                <a href="#" class="btn btn-success btn-lg ">Seleccionar</a>
+                                <a href="#" class="btn-unete">Seleccionar</a>
                             </li>
                         </ul>
                     </div>
@@ -114,25 +117,25 @@
                         <ul class="plan">
                             <li class="plan-head">PLAN <i class="fa fa-dot-circle-o  c-pr-i"></i> AVANZADO</li>
                             
-                            <li><strong>52</strong> Emails</li>
-                            <li><strong>50 GB</strong> Space</li>
-                            <li><strong>Free</strong> Support</li>
-                            <li class="main-price">$199<small> * only</small></li>
+                            <li>Todo lo del plan básico</li>
+                            <li>Clases grupales ilimitadas (Yoga, Zumba, etc.)</li>
+                            <li>Acceso a zona de cardio</li>
+                            <li class="main-price">$85.000</li>
                             <li class="bottom">
-                                <a href="#" class="btn btn-primary btn-lg ">Seleccionar</a>
+                                <a href="#" class="btn-unete">Seleccionar</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <ul class="plan">
-                            <li class="plan-head">PLAN <i class="fa fa-dot-circle-o  c-pr-i"></i> PERSONAL</li>
-                         
-                            <li><strong>52</strong> Emails</li>
-                            <li><strong>50 GB</strong> Space</li>
-                            <li><strong>Free</strong> Support</li>
-                               <li class="main-price">$299 <small> * only</small></li>
+                            <li class="plan-head">PLAN <i class="fa fa-dot-circle-o  c-pr-i"></i> PERSONAL</li>                         
+                            <li>Todo lo anterior +</li>
+                            <li>Entrenamiento personalizado 1 a 1</li>
+                            <li>Evaluación física y nutricional mensual</li>
+                            <li>Acceso al sauna y zona de recuperación</li>
+                            <li class="main-price">$105.000</li>
                             <li class="bottom">
-                                <a href="#" class="btn btn-danger btn-lg">Seleccionar</a>
+                                <a href="#" class="btn-unete">Seleccionar</a>
                             </li>
                         </ul>
                     </div>
@@ -149,204 +152,150 @@
     <!--SERVICES SECTION--> 
        
     <section  id="services-sec">
-        <div class="container">
-            <div class="row ">
-                <h1 class="g-pad-bottom"> CLASES Y SERVICIOS </h1>
+        <div class="container">                            
+            <section class="bg-dark text-white" style="background-color: #000; color: #fff; padding: 60px 0;">
+                <div class="container">
+                    <h2 style="color: yellow;"><i class="fa fa-crosshairs"></i> CLASES Y SERVICIOS</h2>
+                    <div class="row" style="margin-top: 30px;">
                 
-               
-                <div class="text-center g-pad-bottom">
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-fire-extinguisher fa-5x faa-vertical animated c-main "></i>
-                            <h4>CCROSSFIT </h4>
-                            <p>
-                                TEXTO
-                            </p>
-                            
+                    <!-- Imagen Grande -->
+                    <div class="col-md-6" style="height: 540px;">
+                        <img src="assets/img/clases/home_clases.jpg" alt="Gimnasio" class="img-responsive img-rounded" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-coffee fa-5x faa-ring animated c-main "></i>
-                            <h4>YOGA </h4>
-                            <p>
-                                TEXTO
-                            </p>
-                            
+                
+                    <!-- Servicios -->
+                    <div class="col-md-6">
+                        <!-- Servicio 1 -->
+                        <div class="media servicios">
+                            <div class="media-left">
+                                <img src="assets/img/clases/entre_person.jpg" class="media-object img-circle" style="width: 64px; height: 64px;">
+                            </div>
+                            <div class="media-body serviciosBody">
+                                <h4 class="media-heading" style="color: yellow;">Entrenamiento Personalizado</h4>
+                                <p>Rutinas adaptadas a tus objetivos con seguimiento individual.</p>
+                            </div>
+                        </div>
+                
+                        <!-- Servicio 2 -->
+                        <div class="media servicios">
+                        <div class="media-left">
+                            <img src="assets/img/clases/nutricion.jpg" class="media-object img-circle" style="width: 64px; height: 64px;">
+                        </div>
+                        <div class="media-body serviciosBody">
+                            <h4 class="media-heading" style="color: yellow;">Asesoría Nutricional</h4>
+                            <p>Planes alimenticios pensados para potenciar tu rendimiento.</p>
+                        </div>
+                        </div>
+                
+                        <!-- Servicio 3 -->
+                        <div class="media servicios">
+                        <div class="media-left">
+                            <img src="assets/img/clases/grupales.jpg" class="media-object img-circle" style="width: 64px; height: 64px;">
+                        </div>
+                        <div class="media-body serviciosBody">
+                            <h4 class="media-heading" style="color: yellow;">Clases Grupales</h4>
+                            <p>HIIT, yoga, zumba y más con entrenadores certificados.</p>
+                        </div>
+                        </div>
+                
+                        <!-- Servicio 4 -->
+                        <div class="media servicios">
+                        <div class="media-left">
+                            <img src="assets/img/clases/sauna.jpg" class="media-object img-circle" style="width: 64px; height: 64px;">
+                        </div>
+                        <div class="media-body serviciosBody">
+                            <h4 class="media-heading" style="color: yellow;">Zona de Recuperación</h4>
+                            <p>Sauna, masajes deportivos y estiramiento asistido.</p>
+                        </div>
+                        </div>
+                
                     </div>
-                   
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-gavel fa-5x faa-shake animated c-main "></i>
-                            <h4>ZUMBA </h4>
-                            <p>
-                                TEXTO
-                            </p>
-                          
                     </div>
                 </div>
-                  </div>
-                <div class="row">
-                  
-                    <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">description </h4>
-                            <p>
-                                   TXT
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                   <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">description</h4>
-                            <p>
-                                   TXT
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                     <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">description</h4>
-                            <p>
-                                   TXT
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                </div>
-          
+            </section>                                                                                                                     
         </div>
     </section>
     <br><br><br>br
     <!--END SERVICES SECTION-->
 
-     <!-- PORTAFOLIO SECTION-->  
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    FOLIO SECTION-->
-   <section id="port-sec">
-       <div class="container">
-           <div class="row g-pad-bottom" >
-                 <h1 class="g-pad-bottom">ENTRENADORES</h1>
-               
-                <div class="col-md-10 col-md-offset-1 col-sm-12" >
-                    <ul class="portfolio-items col-3">
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t1.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b1.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
+     <!-- ENTRENADORES SECTION-->
+    <section id="port-sec">
+        <div class="container">
+            <div class="row g-pad-bottom" >
+                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> ENTRENADORES</h1>
+                <section id="entrenadores" class="text-center" style="color: white; padding: 60px 0;">
+                    <div class="container">                        
+                        <div id="carousel-entrenadores" class="carousel slide" data-ride="carousel">
+                        
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-entrenadores" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-entrenadores" data-slide-to="1"></li>
+                            <li data-target="#carousel-entrenadores" data-slide-to="2"></li>
+                            <li data-target="#carousel-entrenadores" data-slide-to="3"></li>
+                            <li data-target="#carousel-entrenadores" data-slide-to="4"></li>
+                        </ol>
+                    
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                    
+                            <div class="item active">
+                            <img src="assets/img/entrenadores/3.jpg" class="img-responsive center-block" style="max-height: 300px;">
+                            <div class="carousel-caption" style="margin-top: 40px;">
+                                <h4>Laura González</h4>
+                                <p>Especialista en entrenamiento funcional y fuerza.</p>
                             </div>
-                        </li>
-                       
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t2.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b2.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
                             </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t3.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b3.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
+                    
+                            <div class="item">
+                            <img src="assets/img/entrenadores/2.jpg" class="img-responsive center-block" style="max-height: 300px;">
+                            <div class="carousel-caption" style="margin-top: 40px;">
+                                <h4>Carlos Ruiz</h4>
+                                <p>Entrenador personal certificado en HIIT y nutrición deportiva.</p>
                             </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t4.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b4.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
                             </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t5.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b5.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS/h5>
+                    
+                            <div class="item">
+                            <img src="assets/img/entrenadores/1.jpg" class="img-responsive center-block" style="max-height: 300px;">
+                            <div class="carousel-caption">
+                                <h4>María Fernanda</h4>
+                                <p>Instructora de yoga, pilates y meditación activa.</p>
                             </div>
-                        </li>
-                        <li class="portfolio-item ">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t6.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b6.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
                             </div>
-                        </li>
-                        <li class="portfolio-item ">
-                           <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t7.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b7.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
+                    
+                            <div class="item">
+                            <img src="assets/img/entrenadores/5.jpg" class="img-responsive center-block" style="max-height: 300px;">
+                            <div class="carousel-caption">
+                                <h4>Andrés López</h4>
+                                <p>Preparador físico especializado en atletas de alto rendimiento.</p>
                             </div>
-                        </li>
-                        <li class="portfolio-item ">
-                           <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t8.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b8.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS/h5>
                             </div>
-                        </li>
-                         <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t9.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b9.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>CARLOS</h5>
+                    
+                            <div class="item">
+                            <img src="assets/img/entrenadores/4.jpg" class="img-responsive center-block" style="max-height: 300px;">
+                            <div class="carousel-caption">
+                                <h4>Sofía Martínez</h4>
+                                <p>Coach de estilo de vida saludable y entrenamiento funcional.</p>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-           </div>
-       </div>
-   </section>
+                            </div>
+                        </div>
+                                            
+                       <!-- Controles -->
+                        <a class="left carousel-control" href="#entrenadorCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#entrenadorCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
      <!-- END PORTFOLIO SECTION-->
 
     <!--TESTIMONS SECTION-->    
@@ -492,7 +441,7 @@
     <!-- BOOTSTRAP CORE SCRIPT   -->
     <script src="assets/plugins/bootstrap.min.js"></script>  
      <!-- ISOTOPE SCRIPT   -->
-    <script src="assets/plugins/jquery.isotope.min.js"></script>
+    <!--<script src="assets/plugins/jquery.isotope.min.js"></script>-->
     <!-- PRETTY PHOTO SCRIPT   -->
     <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
     <!-- CUSTOM SCRIPTS -->
