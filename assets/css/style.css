@@ -5,7 +5,13 @@
 body {
           font-family:'Open Sans', sans-serif;
     font-size:14px;
-    background-color: #000;
+    background-image: url(../img/FOndo.png);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-attachment: fixed; /* Hace que la imagen quede estática al hacer scroll */
+    background-position: center; /* Centra la imagen */
+   
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +50,7 @@ h3 {
     color: #eefb03;
 }
 h4 {
-   padding-top: 25px;
+padding-top: 25px;
 line-height: 40px;
 padding-bottom: 0px;
 font-size: 22px;
@@ -108,7 +114,7 @@ section {
 #home-sec { 
   
     
-background-color:#000;
+
 background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -123,11 +129,16 @@ height: auto;
 }
 
 .head-main {
-    font-size:60px ;
+    display: block; /* Cada texto en una nueva línea */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0px 0; /* Espaciado entre los textos */
+    line-height: 1;
+    font-size:90px ;
     font-weight:900;
-    border:5px double #fff;
-    padding:5px;
-    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+    padding: 0;
+    text-transform: capitalize; /* Capitaliza el texto */
+}
     
 }
 .head-sub-main {
@@ -245,12 +256,11 @@ border-color: #000000 !important;
     PRICE SECTION STYLES
 ==================================================*/
 #price-sec {
-    background-color:#000000;
+    
     color: #fff;
 }
 .plan {
-    background: #000000;
-    
+       
     padding: 0 0 15px 0;
     margin: 30px 0px;
     list-style: none;
@@ -261,7 +271,7 @@ border-color: #000000 !important;
 
 
 .plan li {
-   padding: 15px 0px;
+padding: 15px 0px;
 color: #f3f3f3;
 font-size: 16px;
 border-bottom:1px dotted #e1e1e1;
@@ -269,7 +279,7 @@ border-bottom:1px dotted #e1e1e1;
 
 
 .plan li.plan-head {
-   padding: 40px 0px;
+padding: 40px 0px;
 line-height: 35px;
 font-size: 32px;
 font-weight: 600;
@@ -316,9 +326,8 @@ small {
 .portfolio-item .item-main {
   margin: 0 10px 10px 0;
   text-align: center;
-  background: #000000;
   padding: 10px;
-  border:1px solid #000000;
+  
   
 }
 .portfolio-item img {
@@ -365,7 +374,7 @@ color: #000000;
     Contact STYLES
 ==================================================*/
 #contact-sec {
-     background-color:#000000;
+    
 }
 .cnt {
 width: 100%;
