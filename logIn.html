@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>EnerGym</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo Energym">
+            </a>
+        </div>
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home-sec">INICIO</a></li>
+                    <li><a href="#price-sec">PLANES Y MENBRESIAS</a></li>
+                    <li><a href="#services-sec">CLASES Y SERVICIOS</a></li>
+                    <li><a href="#port-sec">ENTRENADORES</a></li>
+                    <li><a href="#testimons-sec">TESTIMONIOS</a></li>
+                    <li><a href="#contact-sec">CONTACTO</a></li>
+                    <li class="bottom">
+                        <a href="#" class="btn">INICIAR SESIóN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV SECTION -->
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+        <!-- LOGIN SECTION -->
+                       
+                <div class="panel-body" style="margin-top: 120px;">
+                    <h3 class="text-center" style="color: #fff; font-weight: bold;">Iniciar Sesión</h3>
+                    <form action="processLogin.php" method="POST">
+                        <div class="form-group">
+                            <label for="email" style="color: #fff;">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" style="color: #fff;">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary btn-block" style="background-color: #eefb03; color: #000; font-weight: bold; border: none;">Iniciar Sesión</button>
+                        </div>
+                        <div class="form-group text-center">
+                            <a href="#" style="color: #eefb03; text-decoration: none;">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </form>
+                </div>                
+            
+        
+        <!-- END LOGIN SECTION -->
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="footer">
+        2025 EnerGym | Todos los derechos Reservados
+    </div>
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap.min.js"></script>
+</body>
+</html>

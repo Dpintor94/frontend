@@ -2,7 +2,11 @@
     GENERAL STYLES
 ==================================================*/
 
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family:'Open Sans', sans-serif;
     font-size:16px;
     background-image: url(../img/FOndo.png);
@@ -25,7 +29,7 @@ h1 {
     color:#eefb03;
 }
     h1::after {
-        display: block;
+    display: block;
     content: "";
     height: 2px;
     width: 150px;
@@ -40,6 +44,7 @@ h1 {
 h2 {
     line-height:50px;
     color:#ffffff;
+    text-align:center;
 }
 h3 {
     line-height:30px;
@@ -90,7 +95,7 @@ section {
 }
 
 .panel-body {
-    background-color: #000000; /* Fondo negro */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff; /* Texto blanco para contraste */
     border-radius: 8px; /* Bordes redondeados opcionales */
     padding: 15px; /* Espaciado interno para mejor legibilidad */
@@ -269,6 +274,7 @@ section {
 }
 
 
+
 /*=======================================
     PRICE SECTION STYLES
 ==================================================*/
@@ -398,13 +404,37 @@ small {
 
 
 #footer {
+    flex: 1;
     background-color:#eefb03;
     color:#000000;
-    padding:20px 50px 20px 50px;
-    text-align:right;
+    padding:20px 50px;
+    text-align:right;    
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: static;
+    }
+
+
+/*=======================================
+    LOGIN STYLES
+==================================================*/
+
+
+#content {
+    flex: 1; /* Hace que este contenedor ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px; /* Espaciado interno para evitar bordes pegados */
 }
 
-
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 50px; /* Espaciado interno */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 350px; /* Limita el ancho máximo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
 /*=======================================
     MEDIA QUERIES
     
