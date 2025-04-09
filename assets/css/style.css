@@ -290,6 +290,22 @@ section {
     transition: background-color 0.3s ease, color 0.3s ease; /* Animaciones suaves */
 }
 
+.nav__item{
+    position: relative;
+    height: 58px;
+}
+.nav__item::after{
+    position: absolute;
+    background-color: #eefb03;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
 /* Efecto hover */
 .navbar-collapse .nav li.bottom .btn:hover {
     background-color: #ffeb3b; /* Fondo amarillo más claro */
@@ -297,7 +313,12 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-
+.nav__item:focus:after,
+.nav__item:hover:after {
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
 
 /*=======================================
     PRICE SECTION STYLES
